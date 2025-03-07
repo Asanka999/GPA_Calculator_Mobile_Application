@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Academic GPA Calculator</h1>
+            <p>Track your semester GPAs and calculate your overall academic performance</p>
+        </header>
+       
+        <div class="app-container">
+            <section class="input-section">
+                <h2>Add Courses</h2>
+               
+                <div class="semester-container">
+                    <div class="semester-header">
+                        <input type="text" id="semester-name" placeholder="Semester Name (e.g. Fall 2024)" class="form-control">
+                    </div>
+                   
+                    <div class="semester-courses" id="courses-container">
+                        <!-- Course rows will be added here dynamically -->
+                    </div>
+                   
+                    <div class="semester-actions">
+                        <button id="add-course" class="button">Add Course</button>
+                        <button id="calculate-semester" class="button button-accent">Calculate Semester GPA</button>
+                    </div>
+                </div>
+               
+                <div class="grade-scale-container">
+                    <h3>Grade Scale</h3>
+                    <div class="grade-scale">
+                        <div class="grade-item"><span>A+</span><span>4.0</span></div>
+                        <div class="grade-item"><span>A</span><span>4.0</span></div>
+                        <div class="grade-item"><span>A-</span><span>3.7</span></div>
+                        <div class="grade-item"><span>B+</span><span>3.3</span></div>
+                        <div class="grade-item"><span>B</span><span>3.0</span></div>
+                        <div class="grade-item"><span>B-</span><span>2.7</span></div>
+                        <div class="grade-item"><span>C+</span><span>2.3</span></div>
+                        <div class="grade-item"><span>C</span><span>2.0</span></div>
+                        <div class="grade-item"><span>C-</span><span>1.7</span></div>
+                        <div class="grade-item"><span>D+</span><span>1.3</span></div>
+                        <div class="grade-item"><span>D</span><span>1.0</span></div>
+                        <div class="grade-item"><span>F</span><span>0.0</span></div>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="results-section">
+                <h2>GPA Results</h2>
+               
+                <div class="gpa-display">
+                    <h3>Current Semester GPA</h3>
+                    <div class="gpa-value" id="semester-gpa">0.00</div>
+                </div>
+               
+                <div class="gpa-display">
+                    <h3>Overall GPA</h3>
+                    <div class="gpa-value" id="overall-gpa">0.00</div>
+                </div>
+               
+                <h3>Semester History</h3>
+                <div class="semesters-list" id="semesters-list">
+                    <div class="empty-state">
+                        <p>No semesters added yet</p>
+                        <p>Complete a semester calculation to see it here</p>
+                    </div>
+                </div>
+               
+                <button id="calculate-overall" class="button button-accent" style="margin-top: 20px;">Calculate Overall GPA</button>
+                <button id="clear-all" class="button" style="margin-top: 10px;">Clear All Data</button>
+            </section>
+        </div>
+       
+        <footer>
+            <p>Designed to help you track your academic progress across all semesters.</p>
+        </footer>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
