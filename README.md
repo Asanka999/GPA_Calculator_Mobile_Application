@@ -12,5 +12,5 @@ Key Features:
 
 This app is perfect for students who want to stay on top of their academic performance and make informed decisions about their studies.
 
-Download APP
-Website
+
+Website: https://crimson-albertine-81.tiiny.site
